@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly's Sale Out</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            color: #333;
+        }
+        .logo-container {
+            text-align: center;
+            padding: 30px 10px 10px 10px;
+            background-color: #ffffff;
+        }
+        .logo-container img {
+            max-width: 180px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .headline {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 20px 0 30px 0;
+            text-transform: uppercase;
+            color: #111;
+        }
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 50px 20px;
+        }
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-image-wrapper {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 12px;
+            background-color: #fafafa;
+        }
+        .product-image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .product-category {
+            font-size: 13px;
+            color: #ff4a8d;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 15px;
+            letter-spacing: 0.5px;
+        }
+        .product-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+            margin: 5px 0 10px 0;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 8px;
+        }
+        .product-details {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .btn-whatsapp {
+            display: block;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+        }
+        .btn-whatsapp:active {
+            background-color: #1b5e20;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #111;
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO TOP AREA -->
+    <div class="logo-container">
+        <!-- Replace logo.jpg with your exact logo filename when uploaded -->
+        <img src="logo.jpg" alt="Molly's Sale Out Logo">
+    </div>
+
+    <div class="headline">Explore Our Latest Curations</div>
+
+    <div class="store-grid">
+
+        <!-- 1. Kids Tablet -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <!-- If you have a kids tablet photo later, replace this placeholder name -->
+                    <img src="kids_tablet.jpg" alt="Kids Tablet">
+                </div>
+                <div class="product-category">Electronics</div>
+                <div class="product-title">Kids Educational Tablet</div>
+                <div class="product-price">$8,000 JMD</div>
+                <div class="product-details">4GB RAM / 64GB Storage. Learn, Play, Create. Android OS & WiFi Setup. Protective Case Included.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Kids%20Educational%20Tablet!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 2. Tattoo Kit -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543066.jpg" alt="Tattoo Kit">
+                </div>
+                <div class="product-category">Professional Gear</div>
+                <div class="product-title">Complete Tattoo Starter Kit</div>
+                <div class="product-price">$10,000 JMD</div>
+                <div class="product-details">Includes tattoo gun, silent motor, 17 needle cartridges, 11 inks, tight grip wrap, and gloves.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Complete%20Tattoo%20Starter%20Kit!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 3. Headlamp -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543073.jpg" alt="Headlamp">
+                </div>
+                <div class="product-category">Lighting</div>
+                <div class="product-title">High-Power LED Headlamp</div>
+                <div class="product-price">$2,500 JMD</div>
+                <div class="product-details">5 LED high brightness, ultra-bright hands-free lighting. Long lasting battery life & IPX4 waterproof.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20High-Power%20LED%20Headlamp!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 4. Battery Charger -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543166.jpg" alt="Smart Charger">
+                </div>
+                <div class="product-category">Electronics</div>
+                <div class="product-title">Smart Battery Charger</div>
+                <div class="product-price">$2,500 JMD</div>
+                <div class="product-details">Smart charging USB power station suitable for 1-4 AA/AAA alkaline rechargeable batteries.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Smart%20Battery%20Charger!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 5. Mixed Charms -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543164.jpg" alt="Mixed Charms">
+                </div>
+                <div class="product-category">Beauty & Crafts</div>
+                <div class="product-title">Mixed Charms Pack</div>
+                <div class="product-price">$500 JMD</div>
+                <div class="product-details">Per 50 mixed charms. Beautifully assorted assortment suitable for nails, junk cases, or custom decorations.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Mixed%20Charms%20Pack!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 6. Acrylic Nail Powder -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543176.jpg" alt="Acrylic Powder">
+                </div>
+                <div class="product-category">Nail Art</div>
+                <div class="product-title">Acrylic Nail Powder</div>
+                <div class="product-price">$350 JMD</div>
+                <div class="product-details">High quality professional powder for a smooth, gorgeous, long-lasting finish. Price is for 1 item.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Acrylic%20Nail%20Powder!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 7. Buddha Chain -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543082.jpg" alt="Buddha Chain">
+                </div>
+                <div class="product-category">Jewelry</div>
+                <div class="product-title">Beaded Buddha Chain</div>
+                <div class="product-price">$1,500 JMD</div>
+                <div class="product-details">Stunning spiritual beaded necklaces featuring a beautifully crafted Buddha pendant. Price is for 1 item.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Beaded%20Buddha%20Chain!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 8. Eyebrow Razor -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543100.jpg" alt="Eyebrow Razor">
+                </div>
+                <div class="product-category">Cosmetics</div>
+                <div class="product-title">Precision Eyebrow Razor</div>
+                <div class="product-price">$100 JMD</div>
+                <div class="product-details">Safe and easy precision trimming tool for styling and maintenance. Price is for 1 item.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Precision%20Eyebrow%20Razor!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+        <!-- 9. Vinyl Sticker -->
+        <div class="product-card">
+            <div>
+                <div class="product-image-wrapper">
+                    <img src="1000543087.jpg" alt="Vinyl Sticker">
+                </div>
+                <div class="product-category">Decorations</div>
+                <div class="product-title">Aggressive Vinyl Sticker</div>
+                <div class="product-price">$200 JMD</div>
+                <div class="product-details">High quality weatherproof vinyl sticker face designs. Perfect for bike, car, helmet, or room decoration.</div>
+            </div>
+            <a href="https://wa.me/18768378023?text=Hi%20Molly's%20Sale%20Out,%20I'm%20interested%20in%20the%20Aggressive%20Vinyl%20Sticker!" class="btn-whatsapp" target="_blank">ORDER ON WHATSAPP</a>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Molly's Sale Out. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
