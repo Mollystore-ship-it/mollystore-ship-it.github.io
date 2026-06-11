@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly's Sale Out</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            color: #333;
+        }
+
+        /* Top Header Area Styling */
+        .header {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Fixed Neon Circular Logo Rules */
+        .logo-container img {
+            max-width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+        }
+
+        .headline {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 15px 0 5px 0;
+            text-transform: uppercase;
+            color: #111;
+        }
+
+        .subheadline {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+
+        /* Side-by-Side Mobile Grid (2 items per row) */
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Clean Item Cards */
+        .product-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Product Image Setup using your main image circles */
+        .product-img-wrapper {
+            width: 100%;
+            height: 110px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Individual crops to zoom in on specific items within your neon master logo */
+        .sewing-crop { object-position: center 82% !important; transform: scale(1.6); }
+        .tablet-crop { object-position: left 25% !important; transform: scale(1.6); }
+        .tattoo-crop { object-position: left 75% !important; transform: scale(1.6); }
+        .camera-crop { object-position: right 72% !important; transform: scale(1.6); }
+        .headlight-crop { object-position: center 20% !important; transform: scale(1.6); }
+        .chain-crop { object-position: right 25% !important; transform: scale(1.6); }
+        .charms-crop { object-position: center center !important; transform: scale(1.8); }
+
+        .product-title {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #111;
+            font-weight: 600;
+        }
+
+        .product-desc {
+            margin: 0 0 8px 0;
+            font-size: 11px;
+            color: #666;
+            line-height: 1.3;
+            min-height: 32px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #ff1493;
+            margin: auto 0 8px 0;
+            font-size: 15px;
+        }
+
+        .view-btn {
+            background: #ff1493;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with your Logo -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="file_000000008b00722fb0049dbf49b4650f.png" alt="Molly's Store Logo">
+        </div>
+        <div class="headline">Molly's Sale Out</div>
+        <div class="subheadline">Everything you need, all in one place!</div>
+    </div>
+
+    <!-- 2-Column Side-by-Side Storefront Grid -->
+    <div class="store-grid">
+
+        <!-- Item 1: Sewing Machine Kit -->
+        <div class="product-card">
+            <div class="product-img-wrapper">
+                <img src="file_000000008b00722fb0049dbf49b4650f.png" class="sewing-crop" alt="Sewing Machine Kit">
+            </div>
+            <div class="product-title">Sewing Machine Kit</div>
+            <div class="product-desc">Includes: Sewing machine, bobbins, needle, thread & tape</div>
+            <div class="product-price">$3,500 JMD</div>
+            <button class="view-btn">View Item</button>
+        </div>
+
+        <!-- Item 2: Kids Tablet -->
+        <div class="product-card">
+            <div class="product-img-wrapper">
+                <img src="file_000000008b00722fb0049dbf49b4650f.png" class="tablet-crop" alt="Kids Tablet">
+            </div>
+            <div class="product-title">Kids Tablet</div>
+            <div class="product-desc">High-quality educational games for kids</div>
+            <div class="product-price">$8,000 JMD</div>
+            <button class="view-btn">View Item</button>
+        </div>
+
+        <!-- Item 3: Rotary Tattoo Kit -->
+        <div class="product-card">
+            <div class="product-img-wrapper">
+                <img src="file_000000008b00722fb0049dbf49b4650f.png" class="tattoo-crop" alt="Tattoo Kit">
+            </div>
+            <div class="product-title">Rotary Tattoo Kit</div>
+            <div class="product-desc">Professional complete starter pen kit</div>
+            <div class="product-price">$10,000 JMD</div>
+            <button class="view-btn">View Item</button>
+        </div>
+
+        <!-- Item 4: Security Camera -->
+        <div class="product-card">
+            <div class="product-img-wrapper">
+                <img src="file_000000008b00722fb0049dbf49b4650f.png" class="camera-crop" alt="Security Camera">
+            </div>
+            <div class="product-title">Security Camera</div>
+            <div class="product-desc">Smart home wireless security protection</div>
+            <div class="product-price">$5,500 JMD</div>
+            <button class="view-btn">View Item</button>
+        </div>
+
+        <!-- Item 5: LED Headlamp & Charger -->
+        <div class="product-card">
+            <div class="product-img-wrapper">
+                <img src="file_000000008b00722fb0049dbf49b4650f.png" class="headlight-crop" alt="Headlamp">
+            </div>
+            <div class="product-title">LED Headlamp + Charger</div>
+            <div class="product-desc">Super bright adjustable focus headlamp</div>
+            <div class="product-price">$2,500 JMD</div>
+            <button class="view-btn">View Item</button>
+        </div>
+
+        <!-- Item 6: Dragon/Buddha Chains -->
+        <div class="product-card">
+            <div class="product-img-wrapper">
+                <img src="file_000000008b00722fb0049dbf49b4650f.png" class="chain-crop" alt="Chains">
+            </div>
+            <div class="product-title">Premium Jewelry Chains</div>
+            <div class="product-desc">Sleek custom styles including Dragon & Buddha</div>
+            <div class="product-price">$1,500 JMD</div>
+            <button class="view-btn">View Item</button>
+        </div>
+
+        <!-- Item 7: Mixed Charms (50 Pcs) -->
+        <div class="product-card">
+            <div class="product-img-wrapper">
+                <img src="file_000000008b00722fb0049dbf49b4650f.png" class="charms-crop" alt="Charms">
+            </div>
+            <div class="product-title">Mixed Charms (50 Pcs)</div>
+            <div class="product-desc">Perfect decorative charms for custom accessories</div>
+            <div class="product-price">$500 JMD</div>
+            <button class="view-btn">View Item</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
