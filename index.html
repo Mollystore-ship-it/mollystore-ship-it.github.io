@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly's Sale Out</title>
+    <meta property="og:title" content="Molly's Sale Out">
+    <meta property="og:image" content="https://mollystore-ship-it.github.io/file_000000008b00722fb0049dbf49b4650f.png">
+    <style>
+        :root { --primary-neon: #ff1493; }
+        body { font-family: sans-serif; margin: 0; padding-bottom: 180px; background-color: #f8f9fa; }
+        .header { text-align: center; padding: 20px; }
+        .logo { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .store-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; padding: 15px; max-width: 600px; margin: 0 auto; }
+        .product-card { background: white; border-radius: 12px; padding: 10px; text-align: center; border: 1px solid #eee; }
+        .product-img { width: 100%; height: 100px; object-fit: cover; border-radius: 8px; background: #eee; }
+        .product-title { font-weight: 700; font-size: 13px; margin: 5px 0; }
+        .desc { font-size: 11px; color: #666; margin-bottom: 5px; height: 28px; }
+        .product-price { font-weight: 800; color: var(--primary-neon); margin-bottom: 5px; }
+        .add-btn { background: #ff1493; color: white; border: none; padding: 8px; border-radius: 8px; width: 100%; cursor: pointer; }
+        .cart-bar { position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 15px; text-align: center; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="file_000000008b00722fb0049dbf49b4650f.png" class="logo">
+    <h1>Molly's Sale Out</h1>
+    <div style="color: #0369a1; font-weight: bold;">✔ VERIFIED & REGISTERED BUSINESS</div>
+</div>
+
+<div class="store-grid">
+    <!-- PRIORITY ITEMS -->
+    <div class="product-card"><img src="341f40fbc9ab2deddbef09c196ad9202.jpg" class="product-img"><div class="product-title">Laptop</div><div class="desc">Clearance unit</div><div class="product-price">$8,000 JMD</div><button class="add-btn" onclick="addToCart('Laptop', 8000)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260610_191114_Temu.jpg" class="product-img"><div class="product-title">Tattoo Kit</div><div class="desc">Starter set</div><div class="product-price">$10,000 JMD</div><button class="add-btn" onclick="addToCart('Tattoo Machine Kit', 10000)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260611_123024_SHEIN.jpg" class="product-img"><div class="product-title">Electric Mixer</div><div class="desc">Handheld power</div><div class="product-price">$2,000 JMD</div><button class="add-btn" onclick="addToCart('Electric Mixer', 2000)">Add</button></div>
+    
+    <!-- DETAILED ITEMS -->
+    <div class="product-card"><div class="product-title">Cake Decorating Kit</div><div class="desc">55 tips, 40 bags, 3 spatulas, box</div><div class="product-price">$4,000 JMD</div><button class="add-btn" onclick="addToCart('Cake Decorating Kit', 4000)">Add</button></div>
+    <div class="product-card"><div class="product-title">Wireless Mic</div><div class="desc">Type-C, 1 microphone</div><div class="product-price">$2,500 JMD</div><button class="add-btn" onclick="addToCart('Wireless Mic', 2500)">Add</button></div>
+    <div class="product-card"><div class="product-title">Piercing Gun Kit</div><div class="desc">1 gun, 2 earrings, 1 marker</div><div class="product-price">$3,000 JMD</div><button class="add-btn" onclick="addToCart('Piercing Gun Kit', 3000)">Add</button></div>
+    <div class="product-card"><div class="product-title">Temporary Tattoo</div><div class="desc">Lasts 3 days</div><div class="product-price">$200 JMD</div><button class="add-btn" onclick="addToCart('Temporary Tattoo', 200)">Add</button></div>
+    <div class="product-card"><div class="product-title">Cupcake Liner (10)</div><div class="desc">Bulk pack of 10</div><div class="product-price">$300 JMD</div><button class="add-btn" onclick="addToCart('Cupcake Liners 10pc', 300)">Add</button></div>
+    <div class="product-card"><div class="product-title">Cupcake Liner (1)</div><div class="desc">Single liner</div><div class="product-price">$50 JMD</div><button class="add-btn" onclick="addToCart('Cupcake Liner 1pc', 50)">Add</button></div>
+    <div class="product-card"><div class="product-title">Ski Mask</div><div class="desc">Durable material</div><div class="product-price">$800 JMD</div><button class="add-btn" onclick="addToCart('Ski Mask', 800)">Add</button></div>
+    <div class="product-card"><div class="product-title">Sleeve (Pair)</div><div class="desc">Protective gear</div><div class="product-price">$500 JMD</div><button class="add-btn" onclick="addToCart('Sleeve Pair', 500)">Add</button></div>
+    <div class="product-card"><div class="product-title">Popcorn Bags</div><div class="desc">Crispy snack bags</div><div class="product-price">$50 JMD</div><button class="add-btn" onclick="addToCart('Popcorn Bags', 50)">Add</button></div>
+    
+    <!-- OTHER ITEMS -->
+    <div class="product-card"><img src="61bfee2dcbf85b286915ff64c0f77465.jpg" class="product-img"><div class="product-title">Sewing Machine</div><div class="desc">Complete kit</div><div class="product-price">$3,500 JMD</div><button class="add-btn" onclick="addToCart('Sewing Machine Kit', 3500)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260610_193730_SHEIN.jpg" class="product-img"><div class="product-title">Battery Charger</div><div class="desc">Portable power</div><div class="product-price">$2,000 JMD</div><button class="add-btn" onclick="addToCart('Battery Charger', 2000)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260610_191422_SHEIN.jpg" class="product-img"><div class="product-title">5 LED Headlamp</div><div class="desc">Bright lighting</div><div class="product-price">$2,500 JMD</div><button class="add-btn" onclick="addToCart('5 LED Headlamp', 2500)">Add</button></div>
+    <div class="product-card"><img src="d26fca85116058447fbabcb880f2aa65.jpg" class="product-img"><div class="product-title">Security Camera</div><div class="desc">Indoor monitoring</div><div class="product-price">$5,500 JMD</div><button class="add-btn" onclick="addToCart('Security Camera', 5500)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260610_193619_SHEIN.jpg" class="product-img"><div class="product-title">Mixed Charms</div><div class="desc">Decorative set</div><div class="product-price">$500 JMD</div><button class="add-btn" onclick="addToCart('Mixed Charms', 500)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260611_005906_SHEIN.jpg" class="product-img"><div class="product-title">Mini Boom Box</div><div class="desc">Portable sound</div><div class="product-price">$200 JMD</div><button class="add-btn" onclick="addToCart('Mini Boom Box', 200)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260611_005740_SHEIN.jpg" class="product-img"><div class="product-title">Jmmo Airpods</div><div class="desc">Wireless audio</div><div class="product-price">$3,000 JMD</div><button class="add-btn" onclick="addToCart('Jmmo Airpods', 3000)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260611_005647_SHEIN.jpg" class="product-img"><div class="product-title">Hair Clipper</div><div class="desc">Professional tool</div><div class="product-price">$5,000 JMD</div><button class="add-btn" onclick="addToCart('Hair Clipper', 5000)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260611_005600_SHEIN.jpg" class="product-img"><div class="product-title">Hair Trimmer</div><div class="desc">Precision groom</div><div class="product-price">$3,000 JMD</div><button class="add-btn" onclick="addToCart('Hair Trimmer', 3000)">Add</button></div>
+    <div class="product-card"><img src="41QU7dfx5HL._AC_UF894,1000_QL80_.jpg" class="product-img"><div class="product-title">Humidifier</div><div class="desc">Air treatment</div><div class="product-price">$2,000 JMD</div><button class="add-btn" onclick="addToCart('Humidifier', 2000)">Add</button></div>
+    <div class="product-card"><img src="Screenshot_20260611_005455_SHEIN.jpg" class="product-img"><div class="product-title">Hair Liner</div><div class="desc">Detailing tool</div><div class="product-price">$1,500 JMD</div><button class="add-btn" onclick="addToCart('Hair Liner', 1500)">Add</button></div>
+</div>
+
+<div class="cart-bar">
+    <div style="font-size: 12px; margin-bottom: 5px;">📍 Orange Bay, Hanover | 📞 876-837-8023</div>
+    <span id="cart-count">0 items</span> | <b id="cart-total">$0 JMD</b><br>
+    <button onclick="sendWhatsAppOrder()" style="background:#25D366; color:white; border:none; padding:10px; border-radius:8px; margin-top:5px; width: 100%;">💬 Send Order</button>
+</div>
+
+<script>
+    let cart = {};
+    function addToCart(name, price) {
+        cart[name] = cart[name] ? { ...cart[name], qty: cart[name].qty + 1 } : { price: price, qty: 1 };
+        updateCartUI();
+    }
+    function updateCartUI() {
+        let count = 0, total = 0;
+        for (let key in cart) { count += cart[key].qty; total += (cart[key].price * cart[key].qty); }
+        document.getElementById('cart-count').innerText = count + (count === 1 ? ' item' : ' items');
+        document.getElementById('cart-total').innerText = '$' + total.toLocaleString() + ' JMD';
+    }
+    function sendWhatsAppOrder() {
+        let msg = "Hi! I'd like to order:\n";
+        for (let key in cart) msg += `• ${cart[key].qty}x ${key}\n`;
+        window.open(`https://wa.me/18768378023?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+</script>
+</body>
+</html>
